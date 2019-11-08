@@ -72,10 +72,8 @@ macOS
 <h1>nginx<h1>
 <table>
   <h4>配置文件默认目录</h4>  
-  <tr>
-    
-    /usr/local/etc/nginx/nginx.conf
-  </tr>
+  <code>/usr/local/etc/nginx/nginx.conf
+  </code>
   <h4>配置修改</h4>
   <tr>   
     
@@ -84,10 +82,9 @@ macOS
     }
   </tr>
   <h4>启动nginx服务器</h4>
-  <tr>
-  
+  <code>
     $brew services start nginx
-  </tr>
+  </code>
   <h4>服务器默认目录</h4>
   <tr>
   
