@@ -68,51 +68,39 @@ macOS
   </tr>
 </table>
 
+
+
 <h1>nginx</h1>
-<table>
-  <h4>配置文件默认目录</h4>  
-  <code>/usr/local/etc/nginx/nginx.conf
-  </code>
-  <h4>配置修改</h4>
-  <pre>
-    <code>   
+<ul>
+	<li>修改配置文件</li>
+		<pre>
+			<code>
+配置文件默认目录 /usr/local/etc/nginx/nginx.conf
+			</code>
+			<code>   
 location / {
     try_files $uri $uri/ /子目录/index.html;
 }
-    </code>
-  </pre>
-
-  <h4>启动nginx服务器</h4>
-  <code>
-    $brew services start nginx
-  </code>
-  <h4>服务器默认目录</h4>
-  <code>
-    /local/Cellar/nginx/版本号/html
-  </code> 
-</table>
+    			</code>
+		</pre>
+	<li>启动nginx服务器</li>
+		<code>$brew services start nginx</code>
+	<li>服务器默认目录</li>
+		<code>/local/Cellar/nginx/版本号/html</code> 
+</ul>
 
 <h1>vue 使用到的命令</h1>
-
-<h4>构建项目</h4>
-<code>
-$vue init webpack name
-</code>
-<h4>安装</h4>
-<code>
-$cd name
-</code>
-<code>
-$npm install
-</code>
-<h4>运行(测试环境)</h4>
-<code>
-$npm run dev
-</code>
-<h4>发布</h4>
-<code>
-$npm run build
-</code>
+<ul>
+	<li>构建项目</li>
+		<code>$vue init webpack name</code>
+	<li>安装</li>
+		<code>$cd name</code>
+		<code>$npm install</code>
+	<li>运行(测试环境)</li>
+		<code>$npm run dev</code>
+	<li>发布打包</li>
+		<code>$npm run build</code>
+</ul>
 
 <h1>vue 发布需要修改部分</h1>
 <table>
